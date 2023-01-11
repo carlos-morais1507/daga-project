@@ -3,16 +3,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Strom, Necacui, Kedet } from '../../assets'
 
-const Card = ({ name }: any) => {
+const Card = ({ name, imgSrc }: any) => {
 
   return (
     <div>
       <Link
-        href="#"
+        href={`/Places/${name}`}
         target="_blank"
       >
       <Image
-        src="/../../assets/Kedet_tn.png"
+        src={imgSrc}
         width={200}
         height={200}
         alt={name}
