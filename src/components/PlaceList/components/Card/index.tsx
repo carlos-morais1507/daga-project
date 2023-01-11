@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Strom, Necacui, Kedet } from '../../assets'
 
 const Card = ({ name, imgSrc }: any) => {
 
   return (
-    <div>
+    <div className='w-[300px]'>
       <Link
         href={`/Places/${name}`}
         target="_blank"
@@ -16,9 +15,11 @@ const Card = ({ name, imgSrc }: any) => {
         width={200}
         height={200}
         alt={name}
-        className='h-[300px] w-[300px] rounded-lg shadow-md hover:brightness-50 duration-200 hover:backdrop-blur-md'
+        className='h-[300px] w-[300px] rounded-lg shadow-md'
       />
-      <h1>{name}</h1>
+      <div className='absolute z-10 h-[300px] w-[300px] -mt-[300px] flex items-center justify-center opacity-0 hover:opacity-100 duration-200 backdrop-blur-sm backdrop-brightness-50 rounded-lg'>
+        <h1 className='text-2xl text-center font-bold'>{name}</h1>
+      </div>
       </Link>
     </div>
   )

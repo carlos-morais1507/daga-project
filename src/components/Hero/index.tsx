@@ -19,12 +19,12 @@ const Hero = () => {
       <Image
         src={DagaBg}
         alt="Mapa de Daga _background"
-        className='max-h-[365px] object-cover w-full overflow-hidden'
+        className='h-[365px] object-cover w-full overflow-hidden'
       />
       <div className='absolute z-10'>
-        <h3 className='text-white text-center font-light tracking-[15px] text-[24px]'>O UNIVERSO DE</h3>
-        <h1 className={`${amiri_b.className} text-white text-center text-[128px]`}>Daga</h1>
-        <h2 className={`${amiri.className} text-white text-center tracking-[15px] text-[24px]`}>MUNDO FANTÁSTICO</h2>
+        <h3 className='text-white text-center font-light tracking-[15px] text-sm md:text-[24px]'>O UNIVERSO DE</h3>
+        <h1 className={`${amiri_b.className} text-white text-center text-6xl p-3 md:p-4 md:text-[128px]`}>Daga</h1>
+        <h2 className={`${amiri.className} text-white text-center text-sm tracking-[15px] md:text-[24px]`}>MUNDO FANTÁSTICO</h2>
       </div>
       
     </div>

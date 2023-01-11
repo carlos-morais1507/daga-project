@@ -21,7 +21,7 @@ export default function Home() {
       <main className={`${inter.className} bg-slate-900 text-white scroll-smooth`}> 
           <Header /> 
           <Hero/>
-          <div className='p-10'>
+          <div className='flex justify-center w-full'>
             <PlaceList />
           </div>  
           
