@@ -3,6 +3,7 @@ import { Inter, Amiri } from '@next/font/google'
 import Hero from '../components/Hero'
 import Header from '../components/Header'
 import PlaceList from '../components/PlaceList'
+import About from '../components/About'
 
 const inter = Inter({ subsets: ['latin'], })
 
@@ -21,7 +22,8 @@ export default function Home() {
       <main className={`${inter.className} bg-slate-900 text-white scroll-smooth`}> 
           <Header /> 
           <Hero/>
-          <div className='flex justify-center w-full'>
+          <div className='flex flex-col justify-center items-center w-full mt-16'>
+            <About />
             <PlaceList />
           </div>  
           
