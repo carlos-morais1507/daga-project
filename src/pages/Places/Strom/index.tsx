@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import { Strom } from '../../../components/PlaceList/assets'
+import Image from 'next/image'
+import { Strom_1, Strom_2 } from './assets'
 
 const inter = Inter({ subsets: ['latin'], })
 
@@ -19,33 +20,20 @@ const StromPage = () => {
             <h1 className='text-[32px] lg:text-[68px] w-full bg-cyan-900 font-bold p-4 shadow-lg'>Glória à cidade de pedra</h1>
           </div>  
         </div>
-        <div>
+        <div className='flex flex-col items-center w-full '>
           <h1 className='text-[32px] lg:text-[56px] text-center font-bold pt-6'>História</h1>
-          <p className='mx-12 py-6 text-justify'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus faucibus tortor, vulputate varius massa mattis eu. In laoreet semper ante, a condimentum est varius ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed ex vel neque auctor malesuada. Pellentesque vel dignissim neque. Vivamus efficitur mattis luctus. Suspendisse convallis ipsum nibh, ac auctor arcu eleifend vel. Curabitur vel suscipit risus. Proin vel dapibus quam.
+          <article className='grid grid-flow-row md:grid-flow-col auto-cols-auto m-8 gap-8'>
+          <Image
+            src={Strom_2}
+            alt="Antiga pintura do reino de Strom"
+            className='w-auto'
+          />
+          <p className='text-justify'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus magna id mauris hendrerit maximus. Vivamus eget dolor ac felis bibendum posuere tempus eu erat. Quisque efficitur enim in turpis blandit facilisis. Vivamus aliquet tempor tellus, non dignissim odio maximus vel. Praesent posuere, nisl a viverra viverra, elit ante condimentum felis, a finibus magna dolor placerat nibh. Etiam tempor aliquam imperdiet. Phasellus elementum diam vel pharetra porttitor. Vestibulum malesuada mauris ac congue iaculis. Suspendisse vitae mi volutpat, porttitor justo ac, ullamcorper nunc. Fusce euismod purus vel diam auctor mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis ullamcorper tortor ut porttitor. Curabitur ac felis lorem. Maecenas risus felis, congue non lacus nec, tincidunt lobortis turpis.
 
-            Phasellus vestibulum, nisi non pretium tempor, urna ex placerat turpis, rutrum scelerisque tortor dolor finibus elit. Fusce non urna id augue efficitur ullamcorper non non diam. Aliquam elementum ullamcorper bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec mattis, sem vitae cursus pharetra, magna leo varius sem, elementum maximus ante augue sed augue. In non lacus ipsum. Aliquam nec tincidunt odio. Aliquam imperdiet justo id nulla pulvinar, in molestie lacus tempor.
-
-            Aliquam ut finibus ante, aliquam vehicula metus. Phasellus mattis accumsan purus, eu blandit sem sollicitudin sit amet. Maecenas ac volutpat ligula. Vivamus sagittis diam vitae nunc sagittis maximus. Sed aliquam, ante ac lobortis ultricies, augue justo sollicitudin nibh, ullamcorper ullamcorper dui leo eget purus. Curabitur viverra, nisl id dapibus iaculis, risus ex fermentum nibh, eu ullamcorper elit massa vitae lorem. Mauris nec orci nibh. Etiam at neque magna. Morbi convallis consectetur tellus eu lacinia. In eleifend faucibus quam nec condimentum. Mauris volutpat metus a varius euismod. Pellentesque at erat non enim interdum cursus in non lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla cursus egestas nunc, ac viverra augue aliquet at.
-
-            Fusce laoreet in urna sed dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla iaculis elit, eu mattis dolor maximus sed. Pellentesque sed congue enim, nec congue nunc. Etiam mattis purus mauris. Donec id egestas nisi. Cras at tellus sed nibh rhoncus laoreet a vitae massa. Morbi venenatis condimentum massa maximus mollis. Donec sed placerat justo. Donec eu iaculis enim. Maecenas suscipit lectus facilisis lacinia iaculis.
-
-            Praesent non justo sed elit commodo consequat. Nunc cursus mi nec risus volutpat fringilla. Morbi auctor sed dolor non iaculis. Maecenas maximus at ante id hendrerit. In scelerisque faucibus pharetra. Praesent in gravida purus, a volutpat urna. Duis id dapibus diam, a convallis ex. Nunc scelerisque diam nec condimentum ornare.
+            Phasellus et pharetra turpis. Morbi posuere tempus augue eu pretium. Nunc malesuada lectus eget suscipit eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et leo fringilla, tempor quam ac, sodales tortor. Morbi volutpat vitae sem non pretium. Cras tempus suscipit nisl, vitae dictum ex sagittis ac. Praesent vel molestie dolor, eget dignissim lacus. Nullam gravida velit pulvinar, dignissim sem vitae, facilisis velit. Donec quis nulla egestas, feugiat dolor vel, viverra tortor. In non dapibus quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus nec interdum dolor. Nullam sit amet tortor pharetra nisi elementum pretium. Nunc vel lacus vitae neque iaculis egestas at eu sapien. Integer nec enim eget lorem tempus euismod.
           </p>
-        </div>
-        <div>
-          <h1 className='text-[32px] lg:text-[56px] text-center font-bold pt-6'>Religião</h1>
-          <p className='mx-12 py-6 text-justify'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus faucibus tortor, vulputate varius massa mattis eu. In laoreet semper ante, a condimentum est varius ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed ex vel neque auctor malesuada. Pellentesque vel dignissim neque. Vivamus efficitur mattis luctus. Suspendisse convallis ipsum nibh, ac auctor arcu eleifend vel. Curabitur vel suscipit risus. Proin vel dapibus quam.
-
-            Phasellus vestibulum, nisi non pretium tempor, urna ex placerat turpis, rutrum scelerisque tortor dolor finibus elit. Fusce non urna id augue efficitur ullamcorper non non diam. Aliquam elementum ullamcorper bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec mattis, sem vitae cursus pharetra, magna leo varius sem, elementum maximus ante augue sed augue. In non lacus ipsum. Aliquam nec tincidunt odio. Aliquam imperdiet justo id nulla pulvinar, in molestie lacus tempor.
-
-            Aliquam ut finibus ante, aliquam vehicula metus. Phasellus mattis accumsan purus, eu blandit sem sollicitudin sit amet. Maecenas ac volutpat ligula. Vivamus sagittis diam vitae nunc sagittis maximus. Sed aliquam, ante ac lobortis ultricies, augue justo sollicitudin nibh, ullamcorper ullamcorper dui leo eget purus. Curabitur viverra, nisl id dapibus iaculis, risus ex fermentum nibh, eu ullamcorper elit massa vitae lorem. Mauris nec orci nibh. Etiam at neque magna. Morbi convallis consectetur tellus eu lacinia. In eleifend faucibus quam nec condimentum. Mauris volutpat metus a varius euismod. Pellentesque at erat non enim interdum cursus in non lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla cursus egestas nunc, ac viverra augue aliquet at.
-
-            Fusce laoreet in urna sed dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla iaculis elit, eu mattis dolor maximus sed. Pellentesque sed congue enim, nec congue nunc. Etiam mattis purus mauris. Donec id egestas nisi. Cras at tellus sed nibh rhoncus laoreet a vitae massa. Morbi venenatis condimentum massa maximus mollis. Donec sed placerat justo. Donec eu iaculis enim. Maecenas suscipit lectus facilisis lacinia iaculis.
-
-            Praesent non justo sed elit commodo consequat. Nunc cursus mi nec risus volutpat fringilla. Morbi auctor sed dolor non iaculis. Maecenas maximus at ante id hendrerit. In scelerisque faucibus pharetra. Praesent in gravida purus, a volutpat urna. Duis id dapibus diam, a convallis ex. Nunc scelerisque diam nec condimentum ornare.
-          </p>
+          </article>
         </div>
       </main>
     </>
