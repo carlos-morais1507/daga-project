@@ -2,7 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Image from 'next/image'
-import { Strom_1, Strom_2 } from './assets'
+import Strom_1 from './assets/Strom_1.png'
+import Strom_2 from './assets/Strom_2.png'
 
 const inter = Inter({ subsets: ['latin'], })
 

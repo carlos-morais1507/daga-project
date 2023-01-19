@@ -6,11 +6,13 @@ import { Amiri } from '@next/font/google'
 const amiri_b = Amiri({
   weight: '700',
   variable: '--font-amiri',
+  subsets: ['latin'],
 })
 
 const amiri = Amiri({
   weight: '400',
   variable: '--font-amiri',
+  subsets: ['latin'],
 })
 
 const Hero = () => {
