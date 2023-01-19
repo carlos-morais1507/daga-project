@@ -26,7 +26,7 @@ const StromPage = () => {
           <Image
             src={Strom_2}
             alt="Antiga pintura do reino de Strom"
-            className='w-auto'
+            className='w-auto h-auto'
           />
           <p className='text-justify'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus magna id mauris hendrerit maximus. Vivamus eget dolor ac felis bibendum posuere tempus eu erat. Quisque efficitur enim in turpis blandit facilisis. Vivamus aliquet tempor tellus, non dignissim odio maximus vel. Praesent posuere, nisl a viverra viverra, elit ante condimentum felis, a finibus magna dolor placerat nibh. Etiam tempor aliquam imperdiet. Phasellus elementum diam vel pharetra porttitor. Vestibulum malesuada mauris ac congue iaculis. Suspendisse vitae mi volutpat, porttitor justo ac, ullamcorper nunc. Fusce euismod purus vel diam auctor mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis ullamcorper tortor ut porttitor. Curabitur ac felis lorem. Maecenas risus felis, congue non lacus nec, tincidunt lobortis turpis.
